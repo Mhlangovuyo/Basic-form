@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Basic-form-validation.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <img src="Logo.png" alt="Logo">
+            <h2>Registration Form</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="Enter your Full name" name="name" id="name" required>
+                    <span id="nameError" class="error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Enter your username" name="username" id="username" required>
+                    <span id="usernameError" class="error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your Email" name="email" id="email" required>
+                    <span id="emailError" class="error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" placeholder="Enter valid Mobile number" name="mobile" id="mobile" required>
+                    <span id="mobileError" class="error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <span id="passwordError" class="error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    <span id="confirmPasswordError" class="error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="home">Home Address</label>
+                    <input type="text" placeholder="Enter Home address" name="homeaddress" id="homeaddress" required>
+                    <span id="homeError" class="error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="work">Work Address</label>
+                    <input type="text" placeholder="Enter work address" name="workaddress" id="workaddress" required>
+                    <span id="workError" class="error"></span>
+                </div>
+                <div class="input-box">
+                    <label for="IP">IP Address</label>
+                    <input type="text" placeholder="Enter IP address" name="postal" id="postal" required>
+                    <span id="ipError" class="error"></span>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
