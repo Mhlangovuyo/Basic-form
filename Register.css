@@ -1,0 +1,78 @@
+ /* Resetting default styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up the body and container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6f61, #ff9f43, #ffdd71);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Animation for background gradient movement */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Centered container for welcome text and button */
+.container {
+    text-align: center;
+    animation: bounce 1s infinite;
+}
+
+/* Bouncing effect for the title */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Welcome message styling */
+h1 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.button {
+    background-color: #ff9f43;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the button */
+.button:hover {
+    background-color: #ff6f61;
+    transform: scale(1.1); /* Slightly enlarges button on hover */
+}
+
+/* Adding a smooth shadow effect */
+.button:active {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
